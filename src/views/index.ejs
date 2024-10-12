@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('partials/head') %>
+</head>
+
+<body>
+    <%- include('partials/navbar') %>
+
+        <section class="title-section text-center py-5">
+            <h1 class="display-4">Local Pulse</h1>
+            <p class="lead">Modern Solutions for Local Businesses</p>
+        </section>
+
+        <main class="container mt-5">
+            <section>
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Our Service</h2>
+                        <p class="card-text">
+                            &#8594; <strong>Website Creation</strong>: We craft stunning, user-friendly websites that
+                            reflect your brand's unique identity and drive customer engagement. Whether you need a
+                            simple landing page or a dynamic website, we've got you covered.<br>
+                            &#8594; <strong>Reliable Hosting</strong>: Enjoy peace of mind with our secure and reliable
+                            hosting solutions. We ensure your website is always online and running smoothly, so you can
+                            focus on what matters most, growing your business.<br>
+                            &#8594; <strong>Hassle-Free Experience</strong>: We handle all the technical details, making
+                            the process seamless for you. From initial design to launch, we work closely with you to
+                            ensure everything meets your expectations without any stress.<br>
+                            &#8594; <strong>Low Cost</strong>: We believe that quality website solutions shouldn't break
+                            the bank. We keep our costs as low as possible to ensure our pricing is low.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section py-5 text-center">
+                <div id="contactForm" class="contact-form mt-4" style="display: block;">
+                    <h2>Transform your Business Now</h2>
+                    <form id="contactFormElement">
+                        <div class="form-group">
+                            <label for="name">Name / Business</label>
+                            <input type="text" class="form-control" id="name" placeholder="Name or business..."
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Contact email..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3"
+                                placeholder="Include any details or questions you may have..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Send Message</button>
+                    </form>
+                </div>
+            </section>
+
+            <section>
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h2 class="card-title">About Us</h2>
+                        <p class="card-text">
+                            We are a locally based web development service proudly situated in Lisburn. I am an
+                            inspiring Computer Science student at Queen's University Belfast, and passionate about
+                            helping local businesses thrive in the digital landscape.
+                            <br><br>
+                            With a focus on modern solutions, we aim to provide high-quality website creation and
+                            hosting services tailored to meet the unique needs of each client. We believe that every
+                            business deserves a strong online presence, and we are dedicated to making that happen in a
+                            hassle-free and affordable manner.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container py-5">
+                    <h2 class="text-center">Frequently Asked Questions</h2>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="card border">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <span class="arrow">&#8594;</span> What services do you offer?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    We provide customized website development designed specifically for local
+                                    businesses, guaranteeing a smooth and captivating online experience.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <span class="arrow">&#8594;</span> How long does it take to create a website?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    Thanks to our years of experience in website creation and the integration of AI
+                                    technology, building a website has never been faster. While timelines can vary based
+                                    on specific needs, a typical completion timeframe is around two weeks after we
+                                    finalize the requirements.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <span class="arrow">&#8594;</span> Do you provide ongoing support?
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    Absolutely! We provide continuous support and maintenance to keep your website
+                                    running smoothly and up to date. Any requested changes will be implemented within a
+                                    day, with even faster responses for urgent updates.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <%- include('partials/footer') %>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Handle form submission
+        $('#contactFormElement').on('submit', async function (event) {
+            event.preventDefault(); 
+
+            const name = $('#name').val(); 
+            const email = $('#email').val(); 
+            const message = $('#message').val();
+
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name, email, message }),
+            });
+
+            if (response.ok) {
+                alert('Message sent successfully!');
+                $('#contactFormElement')[0].reset();
+            } else {
+                alert('Failed to send message.');
+            }
+        });
+    });
+</script>
+
+</html>

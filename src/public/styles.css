@@ -1,0 +1,106 @@
+.title-section {
+    background-color: #007bff;
+    color: white;
+    padding: 80px 20px;
+    border-radius: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.title-section h1 {
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.title-section p {
+    font-size: 1.25rem;
+    opacity: 0.8;
+}
+
+.accordion .card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    /* Reduced space between cards */
+}
+
+.accordion .card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.accordion .btn-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+}
+
+.accordion .btn-link:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.accordion .collapse {
+    border: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+}
+
+.accordion .card-body {
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+.accordion .btn-link .arrow {
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.accordion .btn-link.collapsed .arrow {
+    transform: rotate(90deg);
+}
+
+/* Additional styling for improved visibility */
+.accordion .card {
+    border: 1px solid #ddd;
+    /* Light gray border for each card */
+}
+
+.accordion .card-header {
+    border-radius: 5px 5px 0 0;
+    /* Rounded top corners */
+}
+
+.accordion .collapse {
+    border-radius: 0 0 5px 5px;
+    /* Rounded bottom corners */
+}
+
+.contact-section {
+    text-align: center;
+    /* Centers the button and heading */
+}
+
+.contact-form {
+    max-width: 500px;
+    /* Optional: sets a max width for the form */
+    margin: 0 auto;
+    /* Centers the form within the section */
+    text-align: left;
+    /* Ensures text within the form is left-aligned */
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    /* Spacing between form fields */
+}
+
+.btn-lg {
+    font-size: 1.5rem;
+    /* Increases the font size */
+    padding: 1rem 2rem;
+    /* Increases the button size */
+}
